@@ -1,6 +1,6 @@
 import axios from "axios"
 import fs from 'fs'
-const handler = async () => {
+const handler = async (req, res) => {
   const HOME_SERVER_ENDPOINT = "https://tracker.codevizon.com"
   const WEB_HOOK_ENDPOINT = "https://discordapp.com/api/webhooks/1082012270332215436/11OCfg9gDGDh-AssqL5zkAH7RhBvkMGacAi7lZ0vXKv5Ctm_QdFmlwtniveS48bhlDH1"
   const appendLog = (status) => {
