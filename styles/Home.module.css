@@ -47,11 +47,12 @@
 }
 
 .card {
+  max-width: 250px;
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
+  background: rgba(var(--card-rgb), 0.1);
+  border: 1px solid rgba(var(--card-border-rgb), 0.15);
 }
 
 .card span {
@@ -150,7 +151,30 @@
   );
   background-clip: content-box;
 }
+.pingContainer{
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.block {
+  width: 5px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(var(--tile-start-rgb), 1),
+    rgba(var(--tile-end-rgb), 1)
+  );
+  background-clip: content-box;
+}
+.green {
+  background: rgba(23, 255, 23, 0.473);
+}
+.red {
+  background: rgba(255, 23, 23, 0.473);
 
+}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
